@@ -199,7 +199,7 @@ header span {
 }
 
 .header__title {
-  font-size: 45px;
+  font-size: 52px;
   line-height: 1.1;
 }
 .header__para {
@@ -605,8 +605,10 @@ header span {
   background-color: rgb(244, 66, 42);
 }
 
-@media (max-width: 780px) {
-  /* Nav */
+@media (max-width:1000px) {
+  .header__button {
+    padding: 10px;
+  }
   .nav__links__middle,
   .nav__links__right {
     display: none;
@@ -614,6 +616,11 @@ header span {
   .nav__menu__open {
     display: block;
   }
+
+}
+
+
+@media (max-width: 780px) {
 
   /* header */
   .header__image__container {
@@ -624,7 +631,7 @@ header span {
     display: none;
   }
   .header__text {
-    width: 70%;
+    width: 100%;
     text-align: center;
   }
   .header__row {
